@@ -1,0 +1,108 @@
+:root {
+  /* Cores principais */
+  --background-color: #F5F5F5;   /* Background Principal */
+  --text-color: #333333;         /* Cor do Texto */
+  
+  /* Cores de Destaque */
+  --highlight-color: #d52e2e;    /* Realces e Botões */
+  
+  /* Feedback */
+  --positive-feedback: #4CAF50;  /* Feedback Positivo */
+  --negative-feedback: #FF6F61;  /* Feedback Negativo */
+  
+  /* Detalhes Secundários */
+  --secondary-detail: #9E9E9E;   /* Detalhes Secundários */
+}
+
+.game h1 {
+  font-size: 2.5em;
+}
+
+.points span {
+  font-weight: bold;
+}
+
+.tip span {
+  color: var(--highlight-color);
+}
+
+.wordContainer {
+  margin: 1.5em;
+  padding: 1.5em;
+  border: 8px solid var(--highlight-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.letter, .blankSquare {
+  font-size: 70px;
+  line-height: 1.5;
+  border: 3px solid #000;
+  height: 100px;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.letterContainer p {
+  margin-bottom: 1.2em;
+}
+
+.letterContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letterContainer input {
+  height: 50px;
+  width: 50px;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 1em;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .game h1 {
+    font-size: 2em; /* Ajusta o tamanho do título */
+  }
+
+  .wordContainer {
+    margin: 1em;
+    padding: 1em;
+    flex-direction: row; /* Empilha as letras no mobile */
+  }
+
+  .letter, .blankSquare {
+    font-size: 30px;
+    height: 60px;
+    width: 60px; /* Ajusta as letras para caber melhor em telas menores */
+  }
+
+  .letterContainer input {
+    height: 40px;
+    width: 40px;
+    font-size: 1.5em; /* Reduz o tamanho do input */
+  }
+}
+
+@media (max-width: 480px) {
+  .game h1 {
+    font-size: 1.5em; /* Reduz ainda mais o tamanho do título */
+  }
+
+  .letter, .blankSquare {
+    font-size: 40px;
+    height: 60px;
+    width: 60px; /* Ajusta as letras para telas muito pequenas */
+  }
+
+  .letterContainer input {
+    height: 30px;
+    width: 30px;
+    font-size: 1.2em; /* Reduz o tamanho do input para telas pequenas */
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  /* Cores principais */
+  --background-color: #F5F5F5;   /* Background Principal */
+  --text-color: #333333;         /* Cor do Texto */
+  
+  /* Cores de Destaque */
+  --highlight-color: #d52e2e;    /* Realces e Botões */
+  
+  /* Feedback */
+  --positive-feedback: #4CAF50;  /* Feedback Positivo */
+  --negative-feedback: #FF6F61;  /* Feedback Negativo */
+  
+  /* Detalhes Secundários */
+  --secondary-detail: #9E9E9E;   /* Detalhes Secundários */
+}
+
+h2 span {
+  color: var(--highlight-color);
+  font-size: 1.5em;
+}
